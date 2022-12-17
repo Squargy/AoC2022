@@ -2,7 +2,7 @@
 {
     public class Day7Tests : DayTestSingleBase<Day7>
     {
-        protected override string Input => @"$ cd /
+        protected override string Input1 => @"$ cd /
 $ ls
 dir a
 14848514 b.txt

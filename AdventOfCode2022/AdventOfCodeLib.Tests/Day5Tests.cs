@@ -2,7 +2,7 @@
 
 public class Day5Tests : DayTestSingleBase<Day5>
 {
-    protected override string Input => @"    [D]    
+    protected override string Input1 => @"    [D]    
 [N] [C]    
 [Z] [M] [P]
  1   2   3 

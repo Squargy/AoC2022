@@ -1,7 +1,7 @@
 ﻿Console.WriteLine("Running Advent of Code Driver...");
 Console.WriteLine();
 
-int dayNumber = 7; 
+int dayNumber = 9; 
 
 var day = DayFactory.Create(dayNumber);
 

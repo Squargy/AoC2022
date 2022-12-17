@@ -2,7 +2,7 @@
 
 public class Day1Tests : DayTestSingleBase<Day1>
 {
-    protected override string Input => @"1000
+    protected override string Input1 => @"1000
 2000
 3000
 

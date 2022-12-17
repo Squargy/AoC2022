@@ -2,7 +2,7 @@
 
 public class Day3Tests : DayTestSingleBase<Day3>
 {
-    protected override string Input => @"vJrwpWtwJgWrhcsFMMfFFhFp
+    protected override string Input1 => @"vJrwpWtwJgWrhcsFMMfFFhFp
 jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
 PmmdzqPrVvPwwTWBwg
 wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
