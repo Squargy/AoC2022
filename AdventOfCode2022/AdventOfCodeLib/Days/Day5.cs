@@ -2,7 +2,7 @@
 
 namespace AdventOfCodeLib.Days;
 
-public class Day5 : Day
+public class Day5 : IDay
 {
     private (DockStacks, IEnumerable<ArrangementOrder>) ParseInput(string input)
     {
@@ -13,7 +13,7 @@ public class Day5 : Day
         return (dockStacks, arrangementOrders);
     }
 
-    public override string SolveFirst(string input)
+    public string SolveFirst(string input)
     {
         var (dockStacks, orders) = ParseInput(input);
 
@@ -25,7 +25,7 @@ public class Day5 : Day
         return dockStacks.Message();
     }
 
-    public override string SolveSecond(string input)
+    public string SolveSecond(string input)
     {
         var (dockStacks, orders) = ParseInput(input);
 

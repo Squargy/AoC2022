@@ -1,8 +1,8 @@
 ﻿namespace AdventOfCodeLib.Days
 {
-    public abstract class Day
+    public interface IDay
     {
-        public abstract string SolveFirst(string input);
-        public abstract string SolveSecond(string input);
+        string SolveFirst(string input);
+        string SolveSecond(string input);
     }
 }

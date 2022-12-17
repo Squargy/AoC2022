@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCodeLib.Days;
 
-public class Day7 : Day
+public class Day7 : IDay
 {
     class PuzzleDirectory
     {
@@ -80,7 +80,7 @@ public class Day7 : Day
         return directories;
     }
 
-    public override string SolveFirst(string input)
+    public string SolveFirst(string input)
     {
         Dictionary<string, PuzzleDirectory> directories = CreateDictionaries(input);
 
@@ -90,7 +90,7 @@ public class Day7 : Day
             .ToString();
     }
 
-    public override string SolveSecond(string input)
+    public string SolveSecond(string input)
     {
         Dictionary<string, PuzzleDirectory> directories = CreateDictionaries(input);
         long missingSpace = - 70000000 + 30000000 + directories["/"].ContentLength;

@@ -1,10 +1,10 @@
 ﻿namespace AdventOfCodeLib.Days;
 
-public class Day3 : Day
+public class Day3 : IDay
 {
     private const string Alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    public override string SolveFirst(string input)
+    public string SolveFirst(string input)
     {
         var total = 0;
 
@@ -36,7 +36,7 @@ public class Day3 : Day
         return groups;
     }
 
-    public override string SolveSecond(string input)
+    public string SolveSecond(string input)
     {
         var total = 0;
 

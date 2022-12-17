@@ -2,9 +2,9 @@
 
 namespace AdventOfCodeLib.Days;
 
-public class Day6 : Day
+public class Day6 : IDay
 {
-    public override string SolveFirst(string input)
+    public string SolveFirst(string input)
     {
         var stream = new MemoryStream(Encoding.ASCII.GetBytes(input));
         
@@ -31,7 +31,7 @@ public class Day6 : Day
         throw new IndexOutOfRangeException();
     }
 
-    public override string SolveSecond(string input)
+    public string SolveSecond(string input)
     {
         var stream = new MemoryStream(Encoding.ASCII.GetBytes(input));
 

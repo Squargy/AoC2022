@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCodeLib.Days;
 
-public class Day2 : Day
+public class Day2 : IDay
 {
     private readonly Dictionary<string, string> BeatMap = new()
     {
@@ -63,7 +63,7 @@ public class Day2 : Day
         return score;
     }
 
-    public override string SolveFirst(string input)
+    public string SolveFirst(string input)
     {
         int totalScore = 0;
 
@@ -76,7 +76,7 @@ public class Day2 : Day
         return totalScore.ToString();
     }
 
-    public override string SolveSecond(string input)
+    public string SolveSecond(string input)
     {
         int totalScore = 0;
 

@@ -4,9 +4,9 @@ namespace AdventOfCodeLib;
 
 public static class DayFactory
 {
-    public static Day Create(int dayNumber)
+    public static IDay Create(int dayNumber)
     {
-        return (Day)Type.GetType($"AdventOfCodeLib.Days.Day{dayNumber}")!
+        return (IDay)Type.GetType($"AdventOfCodeLib.Days.Day{dayNumber}")!
             .GetConstructors()
             .First()
             .Invoke(default);

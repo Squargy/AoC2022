@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AdventOfCodeLib.Days;
 
-public class Day8 : Day
+public class Day8 : IDay
 {
     class Tree
     {
@@ -113,7 +113,7 @@ public class Day8 : Day
         }
     }
 
-    public override string SolveFirst(string input)
+    public string SolveFirst(string input)
     {
         Span2D<Tree> forrest = CreateForest(input);
         LookThrough(forrest);
@@ -205,7 +205,7 @@ public class Day8 : Day
         return count;
     }
 
-    public override string SolveSecond(string input)
+    public string SolveSecond(string input)
     {
         int maxScenicScore = 0;
 

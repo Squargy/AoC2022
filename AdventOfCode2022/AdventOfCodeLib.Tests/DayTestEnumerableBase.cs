@@ -3,7 +3,7 @@
 namespace AdventOfCodeLib.Tests;
 
 public abstract class DayTestEnumerableBase<T> 
-    where T : Day, new()
+    where T : IDay, new()
 {
     abstract protected IEnumerable<(string, string)> FirstStarTestData { get; }
     abstract protected IEnumerable<(string, string)> SecondStarTestData { get; }
@@ -11,7 +11,7 @@ public abstract class DayTestEnumerableBase<T>
     [Fact]
     public void ShouldSolveFirstStar()
     {
-        Day day = new T();
+        IDay day = new T();
         foreach (var (input, expected) in FirstStarTestData)
         {
             Assert.Equal(expected, day.SolveFirst(input));
@@ -21,7 +21,7 @@ public abstract class DayTestEnumerableBase<T>
     [Fact]
     public void ShouldSolveSecondStar()
     {
-        Day day = new T();
+        IDay day = new T();
         foreach (var (input, expected) in SecondStarTestData)
         {
             Assert.Equal(expected, day.SolveSecond(input));

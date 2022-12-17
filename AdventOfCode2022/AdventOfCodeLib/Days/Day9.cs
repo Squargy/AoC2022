@@ -2,7 +2,7 @@
 
 namespace AdventOfCodeLib.Days;
 
-public class Day9 : Day
+public class Day9 : IDay
 {
     private (int dX, int dY) ResolveDirection(string d)
     {
@@ -63,12 +63,12 @@ public class Day9 : Day
         return tailVisits.Count.ToString();
     }
 
-    public override string SolveFirst(string input)
+    public string SolveFirst(string input)
     {
         return Solve(input, 2);
     }
 
-    public override string SolveSecond(string input)
+    public string SolveSecond(string input)
     {
         return Solve(input, 10);
     }

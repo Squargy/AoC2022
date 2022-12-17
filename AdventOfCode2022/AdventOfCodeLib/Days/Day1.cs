@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCodeLib.Days;
 
-public class Day1 : Day
+public class Day1 : IDay
 {
     private IEnumerable<Elf> CreateElves(string input)
     {
@@ -14,14 +14,14 @@ public class Day1 : Day
         return elves;
     }
 
-    public override string SolveFirst(string input)
+    public string SolveFirst(string input)
     {
         return CreateElves(input)
             .Max(elf => elf.SnackBag!.Sum())
             .ToString();
     }
 
-    public override string SolveSecond(string input)
+    public string SolveSecond(string input)
     {
         return CreateElves(input)
             .OrderByDescending(elf => elf.SnackBag!.Sum())

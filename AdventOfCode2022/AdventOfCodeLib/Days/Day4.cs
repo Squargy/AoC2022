@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCodeLib.Days;
 
-public class Day4 : Day
+public class Day4 : IDay
 {
     private List<Tuple<string, string>> GetAssignmentList(string input)
     {
@@ -16,7 +16,7 @@ public class Day4 : Day
         return Enumerable.Range(range.First(), range.Last() - range.First() + 1);
     }
 
-    public override string SolveFirst(string input)
+    public string SolveFirst(string input)
     {
         int total = 0;
 
@@ -32,7 +32,7 @@ public class Day4 : Day
         return total.ToString();
     }
 
-    public override string SolveSecond(string input)
+    public string SolveSecond(string input)
     {
         int total = 0;
 
