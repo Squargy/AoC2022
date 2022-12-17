@@ -9,6 +9,6 @@ wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
 ttgJtRGJQctTZtZT
 CrZsJsPPZsGzwwsLwLmpwMDw";
 
-    protected override string Expected1 => "157";
-    protected override string Expected2 => "70";
+    protected override string ExpectedFirstStar => "157";
+    protected override string ExpectedSecondStar => "70";
 }

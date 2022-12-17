@@ -17,6 +17,6 @@ public class Day1Tests : DayTestSingleBase<Day1>
 
 10000";
 
-    protected override string Expected1 => "24000";
-    protected override string Expected2 => "45000";
+    protected override string ExpectedFirstStar => "24000";
+    protected override string ExpectedSecondStar => "45000";
 }

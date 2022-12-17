@@ -26,8 +26,8 @@ $ ls
 5626152 d.ext
 7214296 k";
 
-        protected override string Expected1 => "95437";
+        protected override string ExpectedFirstStar => "95437";
 
-        protected override string Expected2 => throw new NotImplementedException();
+        protected override string ExpectedSecondStar => "24933642";
     }
 }

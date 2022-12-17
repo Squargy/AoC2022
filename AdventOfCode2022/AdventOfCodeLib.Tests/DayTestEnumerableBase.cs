@@ -1,18 +1,18 @@
-﻿using AdventOfCodeLib.Tests.TestData;
-using Xunit;
+﻿using Xunit;
 
 namespace AdventOfCodeLib.Tests;
 
-public abstract class DayTestEnumerableBase<T, U, V> 
+public abstract class DayTestEnumerableBase<T> 
     where T : Day, new()
-    where U : IEnumerable<(string, string)>, new()
-    where V : IEnumerable<(string, string)>, new()
 {
+    abstract protected IEnumerable<(string, string)> FirstStarTestData { get; }
+    abstract protected IEnumerable<(string, string)> SecondStarTestData { get; }
+
     [Fact]
     public void ShouldSolveFirstStar()
     {
         Day day = new T();
-        foreach (var (input, expected) in new U())
+        foreach (var (input, expected) in FirstStarTestData)
         {
             Assert.Equal(expected, day.SolveFirst(input));
         }
@@ -22,7 +22,7 @@ public abstract class DayTestEnumerableBase<T, U, V>
     public void ShouldSolveSecondStar()
     {
         Day day = new T();
-        foreach (var (input, expected) in new V())
+        foreach (var (input, expected) in SecondStarTestData)
         {
             Assert.Equal(expected, day.SolveSecond(input));
         }

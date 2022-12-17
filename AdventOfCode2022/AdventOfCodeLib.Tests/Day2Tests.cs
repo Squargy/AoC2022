@@ -6,6 +6,6 @@ public class Day2Tests : DayTestSingleBase<Day2>
 B X
 C Z";
 
-    protected override string Expected1 => "15";
-    protected override string Expected2 => "12";
+    protected override string ExpectedFirstStar => "15";
+    protected override string ExpectedSecondStar => "12";
 }

@@ -12,6 +12,6 @@ move 3 from 1 to 3
 move 2 from 2 to 1
 move 1 from 1 to 2";
 
-    protected override string Expected1 => "CMZ";
-    protected override string Expected2 => "MCD";
+    protected override string ExpectedFirstStar => "CMZ";
+    protected override string ExpectedSecondStar => "MCD";
 }
