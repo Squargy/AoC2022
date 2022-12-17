@@ -2,13 +2,9 @@
 
 public class Day3 : Day
 {
-    public Day3(DayContext context) : base(context)
-    {
-    }
-
     private const string Alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    protected override string FirstSolutionLogic(string input)
+    public override string SolveFirst(string input)
     {
         var total = 0;
 
@@ -40,7 +36,7 @@ public class Day3 : Day
         return groups;
     }
 
-    protected override string SecondSolutionLogic(string input)
+    public override string SolveSecond(string input)
     {
         var total = 0;
 

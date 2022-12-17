@@ -2,10 +2,6 @@
 
 public class Day4 : Day
 {
-    public Day4(DayContext context) : base(context)
-    {
-    }
-
     private List<Tuple<string, string>> GetAssignmentList(string input)
     {
         return input.Split(Environment.NewLine)
@@ -20,7 +16,7 @@ public class Day4 : Day
         return Enumerable.Range(range.First(), range.Last() - range.First() + 1);
     }
 
-    protected override string FirstSolutionLogic(string input)
+    public override string SolveFirst(string input)
     {
         int total = 0;
 
@@ -36,7 +32,7 @@ public class Day4 : Day
         return total.ToString();
     }
 
-    protected override string SecondSolutionLogic(string input)
+    public override string SolveSecond(string input)
     {
         int total = 0;
 

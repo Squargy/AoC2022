@@ -17,16 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PuzzleInputs", "PuzzleInput
 		PuzzleInput6.txt = PuzzleInput6.txt
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestInputs", "TestInputs", "{CE304016-3E17-43FE-8D0B-8191F862D1AD}"
-	ProjectSection(SolutionItems) = preProject
-		TestInput2.txt = TestInput2.txt
-		TestInput1.txt = TestInput1.txt
-		TestInput3.txt = TestInput3.txt
-		TestInput4.txt = TestInput4.txt
-		TestInput5.txt = TestInput5.txt
-		TestInput6.txt = TestInput6.txt
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCodeLib.Tests", "AdventOfCodeLib.Tests\AdventOfCodeLib.Tests.csproj", "{ABA7FA78-5E21-4690-BD08-BD28037BBAB4}"
 EndProject
 Global

@@ -10,17 +10,5 @@ namespace AdventOfCodeLib
 
             return File.ReadAllTextAsync(inputPath);
         }
-
-        public async static Task<(string, string)> ReadTest(int day, string part)
-        {
-            TestAnswerContainer answers = new();
-
-            var inputPath = @$"C:\Users\emil\source\repos\AoC2022\AdventOfCode2022\TestInput{day}.txt";
-
-            var input = await File.ReadAllTextAsync(inputPath);
-            var answer = answers.Get(day, part);
-
-            return (input, answer);
-        }
     }
 }

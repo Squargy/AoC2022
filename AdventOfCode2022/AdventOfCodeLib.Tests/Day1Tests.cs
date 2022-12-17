@@ -1,38 +1,22 @@
 ﻿namespace AdventOfCodeLib.Tests;
 
-public class Day1Tests
+public class Day1Tests : DayTestSingleBase<Day1>
 {
-    //[Fact]
-    //public void ShouldSolveFirstStar()
-    //{
-    //    // Arrange
+    protected override string Input => @"1000
+2000
+3000
 
-    //    Day day = new Day1();
-    //    string expected = "24000";
+4000
 
-    //    // Act
+5000
+6000
 
-    //    var actual = day.SolveFirst();
+7000
+8000
+9000
 
-    //    // Assert
+10000";
 
-    //    Assert.Equal(expected, actual);
-    //}
-
-    //[Fact]
-    //public void ShouldSolveSecondStar()
-    //{
-    //    // Arrange
-
-    //    Day day = new Day1();
-    //    string expected = "45000";
-
-    //    // Act
-
-    //    var actual = day.SolveSecond();
-
-    //    // Assert
-
-    //    Assert.Equal(expected, actual);
-    //}
+    protected override string Expected1 => "24000";
+    protected override string Expected2 => "45000";
 }

@@ -2,10 +2,6 @@
 
 public class Day2 : Day
 {
-    public Day2(DayContext context) : base(context)
-    {
-    }
-
     private readonly Dictionary<string, string> BeatMap = new()
     {
         { "B", "A" },
@@ -67,7 +63,7 @@ public class Day2 : Day
         return score;
     }
 
-    protected override string FirstSolutionLogic(string input)
+    public override string SolveFirst(string input)
     {
         int totalScore = 0;
 
@@ -80,7 +76,7 @@ public class Day2 : Day
         return totalScore.ToString();
     }
 
-    protected override string SecondSolutionLogic(string input)
+    public override string SolveSecond(string input)
     {
         int totalScore = 0;
 

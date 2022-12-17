@@ -2,10 +2,6 @@
 
 public class Day1 : Day
 {
-    public Day1(DayContext context) : base(context)
-    {
-    }
-
     private IEnumerable<Elf> CreateElves(string input)
     {
         var elves = new List<Elf>();
@@ -18,14 +14,14 @@ public class Day1 : Day
         return elves;
     }
 
-    protected override string FirstSolutionLogic(string input)
+    public override string SolveFirst(string input)
     {
         return CreateElves(input)
             .Max(elf => elf.SnackBag!.Sum())
             .ToString();
     }
 
-    protected override string SecondSolutionLogic(string input)
+    public override string SolveSecond(string input)
     {
         return CreateElves(input)
             .OrderByDescending(elf => elf.SnackBag!.Sum())

@@ -2,12 +2,8 @@
 
 namespace AdventOfCodeLib.Days;
 
-internal class Day5 : Day
+public class Day5 : Day
 {
-    public Day5(DayContext context) : base(context)
-    {
-    }
-
     private (DockStacks, IEnumerable<ArrangementOrder>) ParseInput(string input)
     {
         var splitted = input.Split(Environment.NewLine + Environment.NewLine);
@@ -17,7 +13,7 @@ internal class Day5 : Day
         return (dockStacks, arrangementOrders);
     }
 
-    protected override string FirstSolutionLogic(string input)
+    public override string SolveFirst(string input)
     {
         var (dockStacks, orders) = ParseInput(input);
 
@@ -29,7 +25,7 @@ internal class Day5 : Day
         return dockStacks.Message();
     }
 
-    protected override string SecondSolutionLogic(string input)
+    public override string SolveSecond(string input)
     {
         var (dockStacks, orders) = ParseInput(input);
 
